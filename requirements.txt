@@ -1,0 +1,27 @@
+  GNU nano 8.7.1                 requirements.txt
+# ─── Dokai Healthcare AI — requirements.txt ───────────────────
+# Install:  pip install -r requirements.txt
+#
+# Termux:   pkg install python tesseract   (optional, free local OCR)
+#           pip install -r requirements.txt
+# ──────────────────────────────────────────────────────────────
+
+# Core framework
+flask>=3.0.0
+werkzeug>=3.0.0
+
+# HTTP client — used for all API calls (Groq, OCR.space, DDG, Tavily)
+requests>=2.31.0
+
+# .env file support  ← NEW
+python-dotenv>=1.0.0
+
+# Web search (optional but strongly recommended)
+duckduckgo-search>=6.0.0
+
+# Local OCR (optional — falls back to OCR.space API if missing)
+# Requires system Tesseract:
+#   Desktop:  brew install tesseract  /  apt install tesseract-ocr
+#   Termux:   pkg install tesseract
+Pillow>=10.0.0
+pytesseract>=0.3.10
