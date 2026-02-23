@@ -1,4 +1,4 @@
-  GNU nano 8.7.1                 requirements.txt
+
 # ─── Dokai Healthcare AI — requirements.txt ───────────────────
 # Install:  pip install -r requirements.txt
 #
